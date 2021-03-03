@@ -67,7 +67,7 @@ for i in range(1, max(s["ID"])+1):
         normalized.loc[i, "fuel_consumption_unit"] = "null"
 
     # normalize mileage
-    # mileage is given in integers in the source but needs to be a float rounded to one decimal.
+    # Mileage is given in integers in the source but needs to be a float rounded to one decimal.
     # this can simply be achieved by converting the integers to floats.
     # this is also assuming that the fuel consumption Attribute Name will always be "Km". This is unlikely in the event that
     # there are cars using a different measurement. Thus, I would clarify this beforehand.
